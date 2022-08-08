@@ -1,11 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
+
+
+
+// pages/index.tsx
 
 export default function Home() {
   return (
     <>
-
 
 <Head>
 {/* <meta charset="UTF-8">
@@ -25,61 +27,11 @@ export default function Home() {
 
 
 
+
+
 <body>
 
 
-    <header className="header">
-
-       {/*  <a href="index.html" className="logo"><img src="image/logo.png" alt="" width="90"></a> */}
-
-        <nav className="navbar">{/* 
-            <a href="index.html">Início</a>
-            <a href="cardapio.html">Cardápio</a>
-            <a href="#">Quem Somos</a> */}
-        </nav>
-
-        <div className="icons">
-            <div className="fas fa-bars" id="menu-btn"></div>
-            <div className="fas fa-search" id="search-btn"></div>
-            <div className="fas fa-shopping-cart" id="cart-btn"></div>
-            <div className="fas fa-user" id="login-btn"></div>
-        </div>
-
-        <form action="" className="search-form">
-            <input type="search" id="search-box" placeholder="search here..."/>
-            <label htmlFor="search-box" className="fas fa-search"></label>
-        </form>
-
-
-
-        <form action="" className="login-form">
-            <h3>login now</h3>
-            <input type="email" placeholder="your email" className="box"/>
-            <input type="password" placeholder="your password" className="box"/>
-            {/* <p>forget your password <a href="#">click here</a></p>
-            <p>don't have an account <a id="user-btn" href="#">create now</a></p> */}
-            <input type="submit" value="login now" className="btn"/>
-        </form>
-
-        <form action="" className="user-form">
-            <h3>Create a New Account</h3>
-            <input type="text" placeholder="name" className="box"/>
-            <select id="cidade" className="box">
-                <option>City</option>
-                <option value="Pereiro">Pereiro</option>
-                <option value="Jaguaribe">Jaguaribe</option>
-                <option value="São Miguel">São Miguel</option>
-            </select>
-            <input type="text" placeholder="Andress" className="box"/>
-            <input type="email" placeholder="your email" className="box"/>
-            <input type="password" placeholder="your password" className="box"/>
-            <input type="password" placeholder="Confirm password" className="box"/>
-
-            <input type="submit" value="Sign Up" className="btn"/>
-        </form>
-
-
-    </header>
 
 {/*     <!-- header section ends -->
 
@@ -193,54 +145,6 @@ export default function Home() {
     </section>
 
 
-
-
-    <section className="footer">
-
-        <div className="box-container">
-
-            <div className="box">
-                <div className="footer-logo container-fluid">
-{/*                     <a href="#" className="logo"><img src="image/logo.png" alt="" width="90"></a>
- */}                </div>
-
-                <div className="share">
-{/*                     <a href="#" className="fab fa-facebook-f"></a>
-                    <a href="#" className="fab fa-twitter"></a>
-                    <a href="#" className="fab fa-instagram"></a>
-                    <a href="#" className="fab fa-linkedin"></a>
- */}                </div>
-            </div>
-
-            <div className="box">
-                <h3>contact info</h3>
-{/*                 <a href="#" className="links"> <i className="fas fa-phone"></i> +123-456-7890 </a>
-                <a href="#" className="links"> <i className="fas fa-phone"></i> +111-222-3333 </a>
-                <a href="#" className="links"> <i className="fas fa-envelope"></i> onairpizza@gmail.com </a>
-                <a href="#" className="links"> <i className="fas fa-map-marker-alt"></i> Pereiro, CE - 400104 </a>
- */}            </div>
-
-            <div className="box">
-                <h3>quick links</h3>
-{/*                 <a href="index.html" className="links"> <i className="fas fa-arrow-right"></i> Início </a>
-                <a href="cardapio.html" className="links"> <i className="fas fa-arrow-right"></i> Cardápio </a>
-                <a href="#" className="links"> <i className="fas fa-arrow-right"></i> Quem Somos </a>
- */}
-            </div>
-
-            <div className="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <input type="email" placeholder="your email" className="email"/>
-                <input type="submit" value="subscribe" className="btn"/>
-                <img src="image/payment.png" className="payment-img" alt=""/>
-            </div>
-
-        </div>
-
-
-
-    </section>
 
    {/*  <!-- footer section ends --> */}
 

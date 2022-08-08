@@ -1,8 +1,24 @@
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span {
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
 .home {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(https://popidi.com/wp-content/uploads/2018/02/banner2-base.jpg) no-repeat;
+    background: url(https://correio-cdn1.cworks.cloud/fileadmin/_processed_/0/1/csm_Pasta_em_Casa__Novo_Menu_Forneria__4__-_FOTO_Raul_Spinasse_69ead0fbe0.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
@@ -17,6 +33,7 @@
 .home .content h3 {
     color: var(--white);
     font-size: 4rem;
+    margin-top: 20px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 white, 0 -1px white
 }
 
@@ -30,53 +47,40 @@
     padding: 1rem 0;
     line-height: 1.8;
 }
-
-.promocoes {
-    width: 60%;
-}
-
-.carousel-indicators>li {
-    border-radius: 100%;
-    width: 12px;
-    height: 8px;
-}
-
-
-.features .box-container {
+.categories .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 1.5rem;
 }
 
-.features .box-container .box {
+.categories .box-container .box {
     padding: 3rem 2rem;
+    border-radius: .5rem;
     background: #fff;
+    box-shadow: var(--box-shadow);
     outline: var(--outline);
     outline-offset: -1rem;
     text-align: center;
-    box-shadow: var(--box-shadow);
 }
 
-.features .box-container .box:hover {
+.categories .box-container .box:hover {
     outline: var(--outline-hover);
     outline-offset: 0rem;
 }
 
-.features .box-container .box img {
+.categories .box-container .box img {
     margin: 1rem 0;
     height: 15rem;
 }
 
-.features .box-container .box h3 {
-    font-size: 2.5rem;
-    line-height: 1.8;
+.categories .box-container .box h3 {
+    font-size: 2rem;
     color: var(--black);
+    line-height: 1.8;
 }
 
-.features .box-container .box p {
-    font-size: 1.5rem;
-    line-height: 1.8;
+.categories .box-container .box p {
+    font-size: 1.7rem;
     color: var(--light-color);
     padding: 1rem 0;
 }
-
