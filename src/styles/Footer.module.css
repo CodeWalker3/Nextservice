@@ -2,50 +2,50 @@
     background: #fff;
 }
 
-.footer-logo {
+.footer_logo {
     margin-bottom: 20px;
 }
 
-.footer .box-container {
+.footer .box_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
 
-.footer .box-container .box h3 {
+.footer .box_container .box h3 {
     font-size: 2.5rem;
     color: var(--black);
     padding: 1rem 0;
 }
 
-.footer .box-container .box h3 i {
+.footer .box_container .box h3 i {
     color: var(--orange);
 }
 
-.footer .box-container .box .links {
+.footer .box_container .box .links {
     display: block;
     font-size: 1.5rem;
     color: var(--light-color);
     padding: 1rem 0;
 }
 
-.footer .box-container .box .links i {
+.footer .box_container .box .links i {
     color: var(--orange);
     padding-right: .5rem;
 }
 
-.footer .box-container .box .links:hover i {
+.footer .box_container .box .links:hover i {
     padding-right: 2rem;
 }
 
-.footer .box-container .box p {
+.footer .box_container .box p {
     line-height: 1.8;
     font-size: 1.5rem;
     color: var(--light-color);
     padding: 1rem 0;
 }
 
-.footer .box-container .box .share a {
+.footer .box_container .box .share a {
     height: 4rem;
     width: 4rem;
     line-height: 4rem;
@@ -57,12 +57,12 @@
     text-align: center;
 }
 
-.footer .box-container .box .share a:hover {
+.footer .box_container .box .share a:hover {
     background: var(--orange);
     color: #fff;
 }
 
-.footer .box-container .box .email {
+.footer .box_container .box .email {
     width: 100%;
     margin: .7rem 0;
     padding: 1rem;
@@ -73,7 +73,7 @@
     text-transform: none;
 }
 
-.footer .box-container .box .payment-img {
+.footer .box_container .box .payment-img {
     margin-top: 2rem;
     height: 3rem;
     display: block;
@@ -93,15 +93,11 @@
     color: var(--orange);
 }
 
-
-
-
-
 @media (max-width:450px) {
     .footer {
         text-align: center;
     }
-    .footer .box-container .box .payment-img {
+    .footer .box_container .box .payment-img {
         margin: 2rem auto;
     }
 }

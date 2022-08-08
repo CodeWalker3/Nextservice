@@ -3,7 +3,8 @@ import Styles from '../styles/Header.module.css'
 function Header(){
 
 return(
-<header className="header">
+    
+<header className={Styles.Header}>
 
        {/*  <a href="index.html" className="logo"><img src="image/logo.png" alt="" width="90"></a> */}
 
@@ -57,7 +58,10 @@ return(
     </header>
 
     )
+    
 }
+
+
 
 export default Header;
 

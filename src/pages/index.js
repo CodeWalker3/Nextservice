@@ -31,11 +31,7 @@ export default function Home() {
 
 <body>
 
-
-
-{/*     <!-- header section ends -->
-
-    <!-- home section starts  --> */}
+=
 
     <section className="home" id="home">
 
