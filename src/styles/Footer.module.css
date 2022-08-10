@@ -73,7 +73,7 @@
     text-transform: none;
 }
 
-.footer .box_container .box .payment-img {
+.footer .box_container .box .payment_img {
     margin-top: 2rem;
     height: 3rem;
     display: block;
@@ -92,6 +92,25 @@
 .footer .credit span {
     color: var(--orange);
 }
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--black);
+    margin-top: 40px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: var(--orange);
+    color: #fff;
+  }
+
 
 @media (max-width:450px) {
     .footer {

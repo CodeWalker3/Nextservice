@@ -1,6 +1,6 @@
 import Head from 'next/head'
-
-
+import Styles from '../styles/Home.module.css'
+import Script from 'next/script'
 
 
 // pages/index.tsx
@@ -31,20 +31,20 @@ export default function Home() {
 
 <body>
 
-=
 
-    <section className="home" id="home">
 
-        <div className="content">
+    <section className={Styles.home} id="home">
+
+        <div className={Styles.content}>
             <h3>A melhor pizzaria da região</h3>{/* 
             <a href="cardapio.html" className="btn">Peça Agora</a> */}
         </div>
 
     </section>
 
-
-    <section className="promocoes container-fluid ">
-        <h3 className="heading">Promoções</h3>
+<div className={Styles.color}>
+    <section className={Styles.promocoes}>
+        <h3 className={Styles.heading}>Promoções</h3>
 
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
@@ -63,7 +63,7 @@ export default function Home() {
                     <img className="d-block w-100" src="image/promo3.jpg" alt="Third slide" width="650" height="550"/>
                 </div>
             </div>
-{/*             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>
             </a>
@@ -71,11 +71,11 @@ export default function Home() {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="sr-only">Next</span>
             </a>
- */}        </div>
+</div>
     </section>
-
-    <section className="promocoes container-fluid ">
-        <h3 className="heading">Combos</h3>
+    
+    <section className={Styles.promocoes}>
+        <h3 className={Styles.heading}>Combos</h3>
 
         <div id="carouselSite" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
@@ -94,7 +94,7 @@ export default function Home() {
                     <img className="d-block w-100" src="image/combo3.jpg" alt="Third slide" width="650" height="550"/>
                 </div>
             </div>
-{/*             <a className="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>
             </a>
@@ -102,34 +102,34 @@ export default function Home() {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="sr-only">Next</span>
             </a>
- */}        </div>
+        </div>
     </section>
 {/* 
     <!-- home section ends -->
 
     <!-- features section starts  --> */}
 
-    <section className="features" id="features">
+    <section className={Styles.features} id="features">
 
-        <h1 className="heading"> Nosso<span>Serviço</span> </h1>
+        <h1 className={Styles.heading}> Nosso<span>Serviço</span> </h1>
 
-        <div className="box-container">
+        <div className={Styles.box_container}>
 
-            <div className="box">
+            <div className={Styles.box}>
                 <img src="image/feature-img-1.png" alt=""/>
                 <h3>Alimentos frescos e Orgânicos</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
 
             </div>
 
-            <div className="box">
+            <div className={Styles.box}>
                 <img src="image/feature-img-2.png" alt=""/>
                 <h3>Delivery grátis</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
 
             </div>
 
-            <div className="box">
+            <div className={Styles.box}>
                 <img src="image/feature-img-3.png" alt=""/>
                 <h3>Pagamento Fácil</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
 
     </section>
-
+</div>
 
 
    {/*  <!-- footer section ends --> */}
@@ -158,13 +158,12 @@ export default function Home() {
 
 
 
-{/*     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- custom js file link  -->
-    <script src="js/script.js"></script>
- */}
+   <Script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></Script>
+<Script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></Script>
+<Script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></Script>
+<Script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></Script>
+
+<Script src="js/script.js"></Script>
 </body>
 
 </>

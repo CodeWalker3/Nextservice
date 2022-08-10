@@ -52,6 +52,206 @@
     background: var(--orange);
     color: #fff;
 }
+.header .search_form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search_form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search_form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+
+.header .search_form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search_form label:hover {
+    color: var(--orange);
+}
+
+.header .shopping_cart {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: #fff;
+}
+
+.header .shopping_cart.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .shopping_cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping_cart .box img {
+    height: 10rem;
+}
+
+.header .shopping_cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+.header .shopping_cart .box .fa-trash:hover {
+    color: var(--orange);
+}
+
+.header .shopping_cart .box .content h3 {
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping_cart .box .content span {
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.header .shopping_cart .box .content .quantity {
+    padding-left: 1rem;
+}
+
+.header .shopping_cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+.header .shopping_cart .btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+
+.header .login_form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login_form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .login_form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login_form .box {
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login_form p {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+
+.header .login_form p a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.header .user_form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .user_form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .user_form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .user_form .box {
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .user_form p {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+
+.header .user_form p a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
 
 @media (max-width:991px) {
 
@@ -64,7 +264,7 @@
     #menu-btn {
         display: inline-block;
     }
-    .header .search-form {
+    .header .search_form {
         width: 90%;
     }
     .header .navbar {

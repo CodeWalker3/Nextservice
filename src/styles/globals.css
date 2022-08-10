@@ -29,9 +29,7 @@ html {
     scroll-padding-top: 7rem;
 }
 
-body {
-    background: #eee;
-}
+
 
 section {
     padding: 2rem 9%;
@@ -42,14 +40,9 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+
+body {
+  background: #eee;
 }
 
 @media (max-width:991px) {

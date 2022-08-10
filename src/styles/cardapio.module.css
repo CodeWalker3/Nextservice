@@ -13,7 +13,9 @@
     padding: .5rem 3rem;
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
-
+.color{
+    background-color: #eee;
+}
 .home {
     display: flex;
     align-items: center;
@@ -47,13 +49,13 @@
     padding: 1rem 0;
     line-height: 1.8;
 }
-.categories .box-container {
+.categories .box_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 1.5rem;
 }
 
-.categories .box-container .box {
+.categories .box_container .box {
     padding: 3rem 2rem;
     border-radius: .5rem;
     background: #fff;
@@ -63,24 +65,45 @@
     text-align: center;
 }
 
-.categories .box-container .box:hover {
+.categories .box_container .box:hover {
     outline: var(--outline-hover);
     outline-offset: 0rem;
 }
 
-.categories .box-container .box img {
+.categories .box_container .box img {
     margin: 1rem 0;
     height: 15rem;
 }
 
-.categories .box-container .box h3 {
+.categories .box_container .box h3 {
     font-size: 2rem;
     color: var(--black);
     line-height: 1.8;
 }
+.categories .btn{
+    margin-right: 10px;
+}
 
-.categories .box-container .box p {
+.categories .box_container .box p {
     font-size: 1.7rem;
     color: var(--light-color);
     padding: 1rem 0;
 }
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--black);
+    margin-top: 40px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: var(--orange);
+    color: #fff;
+  }

@@ -6,7 +6,9 @@ import Script from 'next/script'
 
 export default function Cardapio(){
     return (
-        <>        
+        <> 
+
+<div className={styles.color}>       
 <section className={styles.home} id="home">
 
 <div className={styles.content}>
@@ -17,83 +19,83 @@ export default function Cardapio(){
 
 
 <section className={styles.categories} id="categories">
-<a href="#" className="btn">Pequena</a>
-<a href="#" className="btn">Média</a>
-<a href="#" className="btn">Grande</a>
+<a href="#" className={styles.btn}>Pequena</a>
+<a href="#" className={styles.btn}>Média</a>
+<a href="#" className={styles.btn}>Grande</a>
 
 
-<div className="box-container">
+<div className={styles.box_container}>
 
-    <div className="box">
+    <div className={styles.box}>
         <img src="image/pizza.jpg" alt=""/>
         <h3>2 QUEIJOS</h3>
         <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
         </p>
         <p>R$ 30,00 </p>
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
     </div>
 
-    <div className="box">
+    <div className={styles.box}>
         <img src="image/pizza.jpg" alt=""/>
         <h3>2 QUEIJOS</h3>
         <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
         </p>
         <p>R$ 30,00 </p>
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
     </div>
 
-    <div className="box">
+    <div className={styles.box}>
         <img src="image/pizza.jpg" alt=""/>
         <h3>2 QUEIJOS</h3>
         <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
         </p>
         <p>R$ 30,00 </p>
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
     </div>
 
-    <div className="box">
+    <div className={styles.box}>
         <img src="image/pizza.jpg" alt=""/>
         <h3>2 QUEIJOS</h3>
         <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
         </p>
         <p>R$ 30,00 </p>
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
     </div>
-    <div className="box">
+    <div className={styles.box}>
         <img src="image/pizza.jpg" alt=""/>
         <h3>2 QUEIJOS</h3>
         <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
         </p>
         <p>R$ 30,00 </p>
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
-    </div>
-
-    <div className="box">
-        <img src="image/pizza.jpg" alt=""/>
-        <h3>2 QUEIJOS</h3>
-        <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
-        </p>
-        <p>R$ 30,00 </p>
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
     </div>
 
-    <div className="box">
+    <div className={styles.box}>
         <img src="image/pizza.jpg" alt=""/>
         <h3>2 QUEIJOS</h3>
         <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
         </p>
         <p>R$ 30,00 </p>
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
     </div>
 
-    <div className="box">
+    <div className={styles.box}>
+        <img src="image/pizza.jpg" alt=""/>
+        <h3>2 QUEIJOS</h3>
+        <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
+        </p>
+        <p>R$ 30,00 </p>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
+    </div>
+
+    <div className={styles.box}>
         <img src="image/pizza.jpg" alt=""/>
         <h3>2 QUEIJOS</h3>
         <p>Molho de Tomate, Mussarela, Catupiry, Orégano, Azeitona
         </p>
         <p>R$ 30,00 </p>
 
-        <a href="forma-pagamento.html" className="btn">Comprar</a>
+        <a href="forma-pagamento.html" className={styles.btn}>Comprar</a>
     </div>
 
 
@@ -111,6 +113,7 @@ export default function Cardapio(){
 <Script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></Script>
 
 <Script src="js/script.js"></Script>
+</div>
         </>
     )
 }
